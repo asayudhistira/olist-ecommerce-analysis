@@ -1,0 +1,25 @@
+-- Title: Load Data for E-commerce Database
+-- Author: Asa Yudhistira
+-- Description: This SQL script loads data into the e-commerce database tables created in the previous script (01_create_tables.sql).
+
+-- NOTE: Data was loaded using pgAdmin's Import/Export tool
+-- due to PostgreSQL server permission restrictions on Windows.
+--
+-- To replicate this database:
+-- 1. Run 01_create_tables.sql to create all tables
+-- 2. Use pgAdmin Import/Export tool on each table:
+--    - Right click table -> Import/Export Data
+--    - Select corresponding CSV file
+--    - Delimiter: comma
+--    - Header: enabled
+--
+-- Tables and their source files:
+-- customers                  <- olist_customers_dataset.csv
+-- geolocation                <- olist_geolocation_dataset.csv
+-- sellers                    <- olist_sellers_dataset.csv
+-- product_category_translation <- product_category_name_translation.csv
+-- products                   <- olist_products_dataset.csv
+-- orders                     <- olist_orders_dataset.csv
+-- order_items                <- olist_order_items_dataset.csv
+-- order_payments             <- olist_order_payments_dataset.csv
+-- order_reviews              <- olist_order_reviews_dataset.csv
